@@ -148,7 +148,7 @@ export default function Home() {
 
   ;
   const { GoogleGenerativeAI } = require("@google/generative-ai");
-  const genAI = new GoogleGenerativeAI("AIzaSyB9BJ38XwV1GFkkZTsp9rfTEG7IZP5ww5Q");
+  const genAI = new GoogleGenerativeAI("");
 
   const generateRecipe = async () =>{  try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
