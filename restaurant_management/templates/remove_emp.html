@@ -1,0 +1,28 @@
+{% extends 'emp.html' %}
+{% load static %}
+
+
+
+{% block content %}
+{# remove_emp.html #}
+<div class="container">
+    <h1>Remove An Employee!!</h1>
+    <hr>
+    <form method="post" action="{% url 'remove_emp' %}">
+        {% csrf_token %}
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Choose Employee to Be removed
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            {% for emp in emps %}
+              <li><input type="checkbox" name="employee_id" value="{{ emp.id }}"> {{ emp.first_name }} {{ emp.last_name }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-danger">Remove Employee</button>
+    </form>
+</div>
+{% endblock %}

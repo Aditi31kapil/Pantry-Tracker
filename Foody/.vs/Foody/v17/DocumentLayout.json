@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|c:\\users\\dell\\desktop\\restaurant management system\\foody\\user\\user.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|solutionrelative:user\\user.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\user\\user.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|solutionrelative:user\\user.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\user\\sliderusercontrol.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
+      "RelativeMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|solutionrelative:user\\sliderusercontrol.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\user\\menu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|solutionrelative:user\\menu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\user\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{86B63066-42A4-46CE-B97D-DF1965151D96}|Foody.csproj|solutionrelative:user\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.Master",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\User.Master",
+              "RelativeDocumentMoniker": "User\\User.Master",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\User.Master",
+              "RelativeToolTip": "User\\User.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-30T06:58:35.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.Master.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\User.Master.cs",
+              "RelativeDocumentMoniker": "User\\User.Master.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\User.Master.cs",
+              "RelativeToolTip": "User\\User.Master.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T09:00:07.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SliderUserControl.ascx",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\SliderUserControl.ascx",
+              "RelativeDocumentMoniker": "User\\SliderUserControl.ascx",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\SliderUserControl.ascx",
+              "RelativeToolTip": "User\\SliderUserControl.ascx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2024-06-30T08:53:32.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\Default.aspx",
+              "RelativeDocumentMoniker": "User\\Default.aspx",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\Default.aspx",
+              "RelativeToolTip": "User\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-30T07:18:30.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu.aspx",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\Menu.aspx",
+              "RelativeDocumentMoniker": "User\\Menu.aspx",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\restaurant management system\\Foody\\User\\Menu.aspx",
+              "RelativeToolTip": "User\\Menu.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-30T08:16:12.444Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

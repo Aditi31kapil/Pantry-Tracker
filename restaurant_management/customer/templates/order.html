@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block class %}class="sub_page"{% endblock class %}
+
+{% block content %}
+
+<section class="about_section layout_padding">
+    <div class="container mb-5">
+        <div class="row justify-content-center mt-1">
+            <div class="col-md-12 col-sm-12 p-4">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="pt-5">
+                        {% for app in Burger %}
+                        <div class="row">
+                            <div class="col-md-2 col-sm-12">
+                                <img class="rounded" src="{{ app.image.url }}" width="150" height="100" />
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="d-flex flex-row">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="items[]" class="form-check-input" value="{{ app.pk }}">
+                                        <label class="form-check-label">{{ app.name }}</label>
+                                    </div>
+                                    <p class="font-weight-bold pl-5">{{ app.price }}</p>
+                                </div>
+                                <p>{{ app.description }}</p>
+                            </div>
+                        </div>
+                        <hr />
+                        {% endfor %}
+                    </div>
+
+                    <div class="pt-5">
+                        {% for app in Pizza %}
+                        <div class="row">
+                            <div class="col-md-2 col-sm-12">
+                                <img class="rounded" src="{{ app.image.url }}" width="150" height="100" />
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="d-flex flex-row">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="items[]" class="form-check-input" value="{{ app.pk }}">
+                                        <label class="form-check-label">{{ app.name }}</label>
+                                    </div>
+                                    <p class="font-weight-bold pl-5">{{ app.price }}</p>
+                                </div>
+                                <p>{{ app.description }}</p>
+                            </div>
+                        </div>
+                        <hr />
+                        {% endfor %}
+                    </div>
+
+                    <div class="pt-5">
+                        {% for app in Pasta %}
+                        <div class="row">
+                            <div class="col-md-2 col-sm-12">
+                                <img class="rounded" src="{{ app.image.url }}" width="150" height="100" />
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="d-flex flex-row">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="items[]" class="form-check-input" value="{{ app.pk }}">
+                                        <label class="form-check-label">{{ app.name }}</label>
+                                    </div>
+                                    <p class="font-weight-bold pl-5">{{ app.price }}</p>
+                                </div>
+                                <p>{{ app.description }}</p>
+                            </div>
+                        </div>
+                        <hr />
+                        {% endfor %}
+                    </div>
+
+                    <div class="pt-5">
+                        {% for app in Fries %}
+                        <div class="row">
+                            <div class="col-md-2 col-sm-12">
+                                <img class="rounded" src="{{ app.image.url }}" width="150" height="100" />
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="d-flex flex-row">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="items[]" class="form-check-input" value="{{ app.pk }}">
+                                        <label class="form-check-label">{{ app.name }}</label>
+                                    </div>
+                                    <p class="font-weight-bold pl-5">{{ app.price }}</p>
+                                </div>
+                                <p>{{ app.description }}</p>
+                            </div>
+                        </div>
+                        <hr />
+                        {% endfor %}
+                    </div>
+
+                    <button class="btn btn-dark mt-5">Place Order!</button>
+                </form>
+            </div>
+        </div>
+      
+    </div>
+  </section>
+
+{% endblock %}

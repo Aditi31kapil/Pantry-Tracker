@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block class %}class="sub_page"{% endblock class %}
+
+{% block content %}
+
+<section class="about_section layout_padding">
+    <div class="container mb-5">
+        <div class="row justify-content-center mt-1">
+        <div class= "col-md-5 col-sm-12 p-4 text-center">
+            <h1>Order Submitted!!</h1>
+            <p>You Should recieve a confirmation email soon.</p>
+            <a href="{% url 'index' %}">Go to the homepage</a>
+        </div>
+        </div> 
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-5 col-sm-12 text-center">
+                <h3>Order Summary:</h3>
+                {% for item in items.all %}
+                <p>{{ item.name }}<span class="pl-3">{{ item.price }}</span></p>
+                {% endfor %}
+                <p class="font-weight-bold pt-4">Total: {{ price }}</p>
+            </div> 
+
+        </div>
+        <div class="row justify-content-center pb-2 pt-5">
+            <div class="col-md-6 text-center">
+                <button href="">Pay With Cash At Delivery</button>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-6 text-center">
+                <div id="paypal-button" style="color: aliceblue;"></div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+    function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+const csrftoken = getCookie('csrftoken');
+
+  paypal.Button.render({
+    // Configure environment
+    env: 'sandbox',
+    client: {
+      sandbox: 'AVtbNZgnPpO0rBiaMskNfMQVvWVHngjWLu6CE_DumBTSHv9K0f5KPQE5lCiraImi_7FPfFmEOqjlwXaW',
+      production: 'demo_production_client_id'
+    },
+    // Customize button (optional)
+    locale: 'en_US',
+    style: {
+      size: 'large',
+      color: 'gold',
+      shape: 'rect',
+    },
+
+    // Enable Pay Now checkout flow (optional)
+    commit: true,
+
+    // Set up a payment
+    payment: function(data, actions) {
+      return actions.payment.create({
+        transactions: [{
+          amount: {
+            total: '{{  price }}',
+            currency: 'USD'
+          }
+        }]
+      });
+    },
+    // Execute the payment
+    onAuthorize: function(data, actions) {
+      return actions.payment.execute().then(function() {
+        // Show a confirmation message to the buyer
+        $.ajax({
+            type: 'POST',
+            url: "{% url 'order-confirmation' pk %}",
+            beforeSend: function(request){
+                request.setRequestHeader('X-CSRF Token', csrftoken)
+            },
+            data: JSON.stringfy({'isPaid': true }),
+            success: function(data){
+                window.location.href = '/payement-confirmation/'
+            }
+        })
+      });
+    }
+  }, '#paypal-button');
+
+</script>
+{% endblock %}
