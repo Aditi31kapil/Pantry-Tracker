@@ -9,9 +9,9 @@ import { getStorage } from "firebase/storage";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "",
-  authDomain: "inventory-management-e5336.firebaseapp.com",
-  projectId: "inventory-management-e5336",
-  storageBucket: "inventory-management-e5336.appspot.com",
+  authDomain: "",
+  projectId: "",
+  storageBucket: ",
   messagingSenderId: "",
   appId: "",
   measurementId: ""
